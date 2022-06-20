@@ -1,0 +1,54 @@
+1. What happens when the following is compiled/run?
+class MyClass {
+public static void main(String[] args) {
+new MyClass();
+}
+MyClass() {
+recurse("Hello");
+}
+String recurse(String s){
+if(s==null) return null;
+int r = RandomNumbers.getRandomInt();
+int n = s.length();
+if(r % 2 == 0)
+return recurse(s.substring(0,n/2));
+else {
+return recurse(s.substring(n/2,n));
+}
+}
+}
+a. Compiler error
+b. Returns a null value
+c. NullPointerException
+d. StackOverflowError
+Explain your answer
+
+ It gives Stackoverflow error because the base condition is not satisfied.
+
+
+_____ 2. What happens when the following is compiled/run? You may assume that the
+method permute is implemented correctly elsewhere, and that it has the effect
+of randomly rearranging the characters of a String (for instance, on different
+runs of permute with input “events”, the return values could be, for example,
+“evtsen”, “eestnv” and “evenst”).
+class MyClass {
+public static void main(String[] args) {
+new MyClass();
+}
+MyClass() {
+recurse("Hello");
+}
+String recurse(String s){
+if(s==null || s.equals("")) return "";
+int n = s.length();
+String t = permute(s); //rearrange characters of s
+return recurse(t);
+}
+}
+a. Compiler error
+b. Returns a null value
+c. NullPointerException
+d. StackOverflowError
+Explain your answer
+
+it gives stackoverflow error because the parameter is always the same length and it won't reach base condition.

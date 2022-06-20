@@ -1,0 +1,19 @@
+1. What is printed to the console when the main method is run? Explain why this
+happens.
+public class BadInherit extends SuperClass {
+BadInherit(){
+System.out.println("In BadInherit");
+}
+public static void main(String[] args){
+new BadInherit();
+}
+}
+class SuperClass {
+SuperClass(){
+System.out.println("In SuperClass");
+new BadInherit();
+}
+}
+
+This will throw an stackoverflow error because we cannot call subclass default constructor inside the
+ superclass constructor.

@@ -1,0 +1,38 @@
+1. socialSecurityStatus = age>65?"eligible":"ineligible";
+
+2. String s = "a friendly face";
+	a. s.charAt(2) //f
+	b. s.length() //15
+	c. s.substring(2,9)// friendl
+	   s.substring(4)// iendly face
+3.
+	a.Area of circle// float A = Math.PI * Math.pow(r,2)
+	b.Length of Diagonal// int diag = Math.sqrt(Math.pow(len,2)*Math.pow(wid,2))
+
+4.
+a.
+	3*5/9%2 Operator Precedence(*,/,%)
+	=15/9%2
+	=1%2
+	=1 (type of Integer)
+b.
+ 4^3&5 Operator Precedence( &, ^)
+ 100^011&101
+ 100^001
+ 101
+ 5(decimal) (type of Integer)
+
+c.
+ 13>>12<<2^4 Operator Precedence(<<,>>,>>> ,^)
+ 1101>>110000^4
+ 0^4
+ 4 (type of Integer)
+d.
+ 32 | 16/3 >>2 & 5 Operator Precedence(/,>>,&,|)
+ 32|5>>2&5
+ 32|1&5
+ 32|1
+ 33 (type of Integer)
+
+5. int a = (b = 5);
+It won't be compile because b is not declare. If b is declare then value of a  will be 5.
